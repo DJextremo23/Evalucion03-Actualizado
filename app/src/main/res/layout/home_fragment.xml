@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_menu"
+            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            app:title="Menu"
+            app:titleTextColor="@color/white">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+
+                android:padding="12dp"
+                android:src="@drawable/ic_baseline_person_24" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:endIconMode="clear_text"
+
+            android:hint="@string/action_search"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="#D6EBED"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:maxLines="1"/>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Display3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="70dp"
+                android:text="Bienvenidos a mundo cachorro"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/bebes"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Display3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="70dp"
+                android:text="medio donde podras encontrar a tu futura mascota, tenemos colaboracion con muchas defensorias de animales que buscan un hogar para estos angelitos "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
