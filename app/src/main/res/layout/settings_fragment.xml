@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/purple_200"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".SettingsFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/purple_500"
-                android:text="Nro: +51 983584749"
+                android:text="Nro: +51 926 827 808"
                 android:textSize="15sp"
                 android:textStyle="italic"
                 />
@@ -71,11 +71,16 @@
                 android:layout_marginTop="15dp"
                 android:background="@color/purple_500"
                 android:text="Editar foto de perfil"
+
+
                 android:textColor="@color/black"
                 android:paddingStart="25dp"
                 android:textAllCaps="false"
                 android:paddingEnd="25dp"
                 />
+
+
+
         </LinearLayout>
     </ScrollView>
 

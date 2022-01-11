@@ -23,13 +23,16 @@
             app:title="Menu"
             app:titleTextColor="@color/white">
 
-            <androidx.constraintlayout.utils.widget.ImageFilterView
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setting_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="right"
-
-                android:padding="12dp"
-                android:src="@drawable/ic_baseline_person_24" />
+                android:layout_marginRight="10dp"
+                android:padding="20dp"
+                app:icon="@drawable/ic_baseline_person_24"
+                app:iconTint="#EFE9CC" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
